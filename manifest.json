@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "URL and Cookies Logger",
+  "version": "1.0",
+  "description": "Log current tab's URL and cookies to the console.",
+  "permissions": ["tabs", "cookies", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://*/*", "http://*/*"]
+}
